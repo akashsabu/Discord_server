@@ -1,0 +1,687 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    text-decoration: none;
+    /* color: #313338; */
+}
+
+ul {
+    list-style: none;
+}
+
+@import url('https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial');
+
+
+@font-face {
+    font-family: 'gg sans Bold';
+    font-style: normal;
+    font-weight: 800;
+    src: local('gg sans Bold'), url('Fonts/ggsans/gg\ sans\ Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'gg sans Normal Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('gg sans Normal Regular'), url('Fonts/ggsans/gg\ sans\ Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'gg sans Medium Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('gg sans Medium Regular'), url('Fonts/ggsans/gg\ sans\ Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'gg sans SemiBold Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('gg sans SemiBold Regular'), url('Fonts/ggsans/gg\ sans\ Semibold.woff') format('woff');
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    font-family: "gg sans, sans serif";
+    position: relative;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+main {
+    height: 400px;
+    background-image: url(Assets/main_bg.svg);
+    overflow: hidden;
+    position: relative;
+}
+
+.bg-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 350px;
+    z-index: 1;
+}
+
+.bg-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    z-index: 1;
+}
+
+header {
+    height: 80px;
+    position: relative;
+}
+
+main .logo {
+    width: 130px;
+}
+
+main a {
+    color: #fff;
+    font-family: "gg sans SemiBold Regular";
+
+}
+
+
+
+main .nav-menu a {
+    margin-right: 35px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+
+    ;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    padding: 7px 16px;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 14px;
+    font-family: "gg sans SemiBold Regular";
+    color: #313338;
+    text-wrap: nowrap;
+}
+
+.button:hover {
+    color: #5865f2;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+
+
+.overlay,.drop_overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #3133388c;
+    z-index: 150;
+}
+
+.hamburger-button {
+    display: none;
+    background-color: #33333300;
+    color: white;
+    padding: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-link {
+    min-height: 400px;
+    height: 100vh;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block !important;
+    background-color: #fff;
+    color: #23272a;
+    z-index: 200;
+    transition: width 0.3s ease;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.nav-link.active {
+    width: 30% !important;
+}
+
+.nav-link a {
+    padding: 15px;
+    display: block;
+    color: #23272a;
+}
+
+.nav-close {
+    display: none;
+    padding: 15px;
+    text-align: right;
+}
+
+
+
+
+
+#spotlight {
+    position: relative;
+    ;
+    z-index: 10;
+}
+
+#spotlight div {
+    padding-top: 40px;
+    max-width: 500px;
+    color: white;
+    margin-inline: auto;
+    text-align: center;
+}
+
+#spotlight h1 {
+    font-size: 44px;
+    line-height: 42px;
+    margin-bottom: 10px;
+}
+
+#spotlight p {
+    font-family: "gg sans Medium Regular";
+    font-size: 16px;
+}
+
+#center {}
+
+.SearchBarContainer {
+    padding-block: 50px;
+    max-width: 980px;
+    margin-inline: auto;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+
+}
+
+.SearchBarContainer div:focus-within {
+    outline: 2px solid #5865f2;
+}
+
+#center .SearchBarContainer div {
+    height: 52px;
+    width: 100%;
+    background-color: #31333827;
+    border-radius: 7px;
+    color: white;
+    gap: 5px;
+    justify-content: center;
+
+}
+
+#center .SearchBarContainer input {
+    width: 90%;
+    padding: 7px 30px 7px 16px;
+    background-color: #31333822;
+    border-radius: 5px;
+    color: 3133384e;
+    outline: none;
+    font-size: 16px;
+    font-family: "gg sans Medium regular";
+
+}
+
+#searchMessage {
+    width: 13%;
+    display: none;
+    align-items: center;
+    height: 35px;
+    color: #23272a;
+    font-family: "gg sans Normal regular";
+    font-size: 12px;
+
+}
+
+#center .SearchBarContainer .searchButton {
+    height: 52px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5865f2;
+    border-radius: 5px;
+    color: white;
+
+    &:hover {
+        background-color: #4755f0;
+        transition: 0.3s;
+    }
+
+    ;
+}
+
+.community {
+    max-width: 980px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 0px 50px;
+}
+.communityCategory {
+    max-width: 280px;
+}
+
+.dropdown{
+    display: none;
+    justify-content: space-between;
+    max-width:500px;
+    color: #313338;
+    margin-inline: auto;
+    padding: 16px ;
+    border: 1px solid #31333860;
+    border-radius: 7px;
+}
+.dropdown p{
+    color: #313338;
+    font-family: "gg sans Normal Regular";
+}
+.dropdown i{
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    width: 90%;
+    max-width: 500px;
+    height: fit-content;
+    z-index: 200;
+    margin-inline: auto;
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+}
+
+
+.communityCategory p, .dropdown-menu p{
+    font-size: 16px;
+    font-family: "gg sans Medium Regular";
+    padding-inline: 15px 15px;
+    color: #313338;
+
+}
+
+
+.categoryDiv {
+    background-color: #31333808;
+    padding: 12px 28px;
+    border-radius: 7px;
+    gap: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #31333827;
+    }
+
+    ;
+}
+
+.categoryDiv.active {
+    background-color: #31333829;
+}
+
+
+.categoryDiv div {
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.communityResult {
+    max-width: 680px;
+}
+
+.communityResult h1 {
+    margin-top: 15px;
+    padding-inline: 18px;
+    font-family: "gg sans Bold";
+    color: #313338;
+}
+
+.community-card {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 10px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #31333822;
+        transition: 0.3s ease;
+    }
+
+    ;
+
+    &:focus {
+        background-color: #31333822;
+
+    }
+
+    ;
+}
+
+.card_img {
+    max-width: 256px;
+    height: 144px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.card_img img {
+    min-height: 100%;
+    object-fit: cover;
+}
+
+
+.card-components {
+    font-family: "gg sans Medium Regular";
+}
+
+.card-components h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card-components p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #313338;
+}
+
+
+
+.card-components .verified {
+    width: fit-content;
+    padding: 5px 7px;
+    margin-top: 8px;
+    border-radius: 5px;
+    background-color: #31333822;
+    font-size: 12px;
+    font-family: "gg sans Bold";
+    color: green;
+
+}
+
+.card-components .verified span {
+    margin-right: 5px;
+}
+
+
+
+#about {}
+
+.top {
+    background-color: #5865f2;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding-block: 96px 72px;
+    font-family: "gg sans SemiBold Regular";
+}
+
+.abt_button {
+    display: inline-block;
+    margin-block: 24px;
+    padding: 16px 32px;
+    border-radius: 30px;
+    color: white;
+    background-color: #23272a;
+    font-size: 20px;
+    font-family: 'gg sans Medium Regular';
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: 0.3s;
+    }
+
+    ;
+}
+
+.bottom {
+    padding-block: 120px;
+}
+
+.left {
+    flex-basis: 30%;
+    color: #313338;
+}
+
+.left h1 {
+    font-family: "gg sans SemiBold ";
+    font-size: 32px;
+}
+
+.left p {
+    font-family: 'gg sans Medium Regular';
+    font-size: 18px;
+    margin-block: 25px;
+}
+
+.left .abt_button {
+    width: 250px;
+    margin: 0px;
+    text-align: center;
+}
+
+.right {
+    flex-basis: 60%;
+}
+
+
+
+
+
+footer {
+    background-color: #23272a;
+    padding-block: 80px 64px;
+}
+
+footer h1 {
+    width: 280px;
+    color: #5865f2;
+    font-family: "gg sans Bold";
+    font-size: 48px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo a span {
+    display: inline-block;
+    width: 25px;
+    margin-right: 24px;
+
+}
+
+.div-link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    font-family: "gg sans SemiBold Regular";
+    color: #5865f2;
+    margin-bottom: 20px;
+}
+
+footer a {
+    width: 180px;
+    font-family: "gg sans Medium Regular";
+    color: white;
+    margin-top: 8px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    ;
+}
+
+.footer-bottom {
+    border-top: 1px solid #5865f2;
+    padding-top: 32px;
+    margin-top: 32px;
+}
+
+.footer-bottom span {
+    display: inline-block;
+    width: 125px;
+}
+
+.footer-bottom div a {
+    font-size: 14px;
+}
+
+.footer-bottom div a:hover {
+    text-decoration: none;
+}
+
+.footer-button {
+    padding: 10px 16px;
+    border-radius: 30px;
+    background-color: #5865f2;
+    font-family: 'gg sans SemiBold Regular';
+
+    &:hover {
+        background-color: #7b85f4;
+        transition: 0.3s;
+    }
+
+    ;
+}
+
+@media screen and (max-width:1024px) {
+
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: block;
+    }
+
+    .dropdown{
+        display: flex;
+    }
+    .communityCategory {
+        display: none;
+    }
+
+    .communityResult {
+        margin-inline: auto;
+    }
+
+    .bottom div {
+        flex-direction: column-reverse;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .left h1 {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .left p {
+        text-align: left;
+        font-size: 16px;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width:780px) {
+
+    .bg-left,.bg-right{
+        display: none;
+    }
+    .nav-link.active {
+        width: 40% !important;
+    }
+
+    #spotlight h1 {
+    font-size: 28px;
+
+    }
+
+    #searchMessage{display: none;}
+
+    .communityResult h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+
+    .card_img{
+        display: none;
+    }
+
+    .top h2{
+        font-size:24px;
+    }
+}

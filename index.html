@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,
+        500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a83bf5d8e7.js" crossorigin="anonymous"></script>
+    <title>Discord Servers - Home</title>
+</head>
+<body>
+    <div id="overlay"></div>
+    <div id="drop_overlay"></div>
+
+    <main>
+        <div>
+            <img class="bg-left" src="Assets/hero_bg1.svg" alt="hero_bg1">
+            <img class="bg-right" src="Assets/hero_bg2.svg" alt="hero_bg2">
+        </div>
+        <header class="flex">
+            <div class="wrapper">
+                <nav class="flex">
+                    <a class="logo" href="#"><img src="Assets/discord_logo.svg" alt=""></a>
+                    <div id="nav" class="nav-menu ">
+                        <span class="nav-close"><i><i class="fa-solid fa-x"></i></i></span> 
+                        <a href="#">Download</a>
+                        <a href="#">Nitro</a>
+                        <a href="#">Discover</a>
+                        <a href="#">Safety</a>
+                        <a href="#">Support</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                    </div>
+                    <div class="flex">
+                        <div><a class="button" href="#">Open Discord</a></div>
+                   
+                        <div class="flex" style="gap: 10px;">
+                            <div id="hamburger-menu">
+                            <button class="hamburger-button"> ☰ </button>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </nav>
+
+            </div>            
+        </header>
+        <section id="spotlight">
+            <div class="wrapper">
+                <div>
+                    <h1 class="poppins-black">FIND YOUR COMMUNITY ON DISCORD</h1>
+                    <p>From gaming, to music, to learning, there's a place for you.</p>
+                </div>
+               
+            </div>
+        </section>
+    </main>
+
+
+
+    <section id="center">
+        <div class="wrapper">
+            <div class="SearchBarContainer flex">
+                <div class="flex">
+                    <input id="searchInput" type="text" placeholder="Explore Communities">
+                    <span id="searchMessage">Press Enter to Search</span>
+                </div>
+                <a class="searchButton"><span><i class="fa-solid fa-magnifying-glass"></i></span></a>
+            </div>
+
+            
+            <div id="dropdownButton" class="dropdown">
+                <p id="drop_text" type="text" value="Select Category">Select Category </p>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="community">
+                
+                
+                <div id="category" class="communityCategory ">
+
+                   
+                   
+                    <div class="categoryDiv flex" tabindex="0">
+                        <span><i class="fa-solid fa-compass fa-lg"></i></span> 
+                        <div class="flex">
+                            <p>All</p>
+                            <p id="all_count"></p>
+                        </div>
+                    </div>
+
+                    <div class="categoryDiv flex"  tabindex="0">
+                        <span><i class="fa-solid fa-gamepad"></i></span>
+                        <div class="flex">
+                            <p>Gaming</p>
+                            <p id="gaming_count"></p>
+                        </div>
+                    </div>
+                    <div class="categoryDiv flex"  tabindex="0">
+                        <span><i class="fa-solid fa-tv"></i></span>
+                        <div class="flex">
+                            <p>Entertainment</p>
+                            <p id="entertainment_count"></p>
+                        </div>
+                    </div>
+                    <div class="categoryDiv flex"  tabindex="0">
+                        <span><i class="fa-solid fa-graduation-cap"></i></span>
+                        <div class="flex">
+                            <p>Education</p>
+                            <p id="education_count"></p>
+                        </div>
+                    </div>
+                    <div class="categoryDiv flex"  tabindex="0">
+                        <span><i class="fa-solid fa-microchip"></i></span>
+                        <div class="flex">
+                            <p>Science & Tech</p>
+                            <p id="tech_count"></p>
+                        </div>
+                    </div>
+                    <div class="categoryDiv flex"  tabindex="0">
+                        <span><i class="fa-solid fa-music"></i></span>
+                        <div class="flex">
+                            <p>Music</p>
+                            <p id="music_count"></p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="communityResult">
+                    
+                    <!-- <h2>33265 Results Found</h2>    -->
+                    <!-- <div class="community-card "> -->
+                        <!-- <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div>    
+                            <h3>
+                                <span><img src="" alt=""></span>
+                                Midjourney
+                            </h3>
+                            <p>The official server for Midjourney, a text-to-image 
+                                AI where your imagination is the only limit.</p>
+                            <div>
+                                <span>1,566,660 Online </span>
+                                <span></span>
+                                <span>19,359,451 Members</span>
+                            </div>  
+                            <div>
+                                <span><img src="" alt=""></span>
+                                Verified
+                            </div> 
+                        </div> -->
+                    <!-- </div> -->
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    
+    <section id="about">
+        <div class="top">
+            <div class="wrapper">
+                <h2>Have a server you want to add to Discovery?</h2>
+                <div><a class="abt_button" href="">Make Your Community Public</a></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="wrapper flex" style="justify-content: space-evenly;">
+                <div class="left">
+                    <h1>Find a place where you belong</h1>
+                    <p>Discord servers are organized into topic-based channels where you can collaborate,
+                         share, and just talk about your day without clogging up a group chat.</p>
+                    <div><a class="abt_button" href="">Join Discord</a></div>
+                </div>
+                <div class="right">
+                    <img src="Assets/abt_image.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+<!-- Footer Section -->
+    <footer>
+        <div class="wrapper footer-flex">
+            <div style="margin-bottom: 50px;">
+                <h1>IMAGINE A PLACE</h1>
+                <div class="footer-logo">
+                    <a href="#"><span><img src="Assets/x_logo.svg" alt="x"></span></a>
+                    <a href="#"><span><img src="Assets/instagram_logo.svg" alt="instagram"></span></a>
+                    <a href="#"><span><img src="Assets/facebook_logo.svg" alt="facebook"></span></a>
+                    <a href="#"><span><img src="Assets/youtube_logo.svg" alt="youtube"></span></a>
+                    <a href="#"><span><img src="Assets/tiktok_logo.svg" alt="tiktok"></span></a>
+                </div>
+            </div>
+            <div  class="div-link">
+                <div class="footer-link">
+                    <p>Product</p>
+                    <a href="#">Download</a>
+                    <a href="#">Nitro</a>
+                    <a href="#">Status</a>
+                    <a href="#">App Directory</a>
+                    <a href="#">New Mobile Experience</a>
+                </div>
+                <div class="footer-link">
+                    <p>Company</p>
+                    <a href="#">About</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Brand</a>
+                    <a href="#">Newsroom</a>
+                    <a href="#">Fall Release</a>
+
+                </div>
+                <div class="footer-link">
+                    <p>Resources</p>
+                    <a href="#">College</a>
+                    <a href="#">Support</a>
+                    <a href="#">Safety</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">StreamKit</a>
+                    <a href="#">Creators</a>
+                    <a href="#">Community</a>
+                    <a href="#">Developers</a>
+                    <a href="#">Gaming</a>
+                    <a href="#">Quests</a>
+                    <a href="#">Official 3rd Party Merch</a>
+                </div>
+                <div class="footer-link">
+                    <p>Policies</p>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookie Settings</a>
+                    <a href="#">Guidelines</a>
+                    <a href="#">Acknowledgements</a>
+                    <a href="#">Licenses</a>
+                    <a href="#">Company Information</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper footer-bottom flex">    
+            <a href="#"><span><img src="Assets/discord_logo.svg" alt="Discord"></span></a>
+            <div><a class="footer-button " href="#">Open Discord</a></div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
