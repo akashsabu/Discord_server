@@ -191,10 +191,6 @@ main a:hover {
     text-align: right;
 }
 
-
-
-
-
 #spotlight {
     position: relative;
     ;
@@ -220,7 +216,6 @@ main a:hover {
     font-size: 16px;
 }
 
-#center {}
 
 .SearchBarContainer {
     padding-block: 50px;
@@ -229,8 +224,6 @@ main a:hover {
     display: flex;
     gap: 15px;
     align-items: center;
-
-
 }
 
 .SearchBarContainer div:focus-within {
@@ -319,7 +312,6 @@ main a:hover {
     align-items: center;
 }
 
-
 .dropdown-menu {
     position: absolute;
     display: block;
@@ -335,7 +327,6 @@ main a:hover {
     right: 0;
 }
 
-
 .communityCategory p, .dropdown-menu p{
     font-size: 16px;
     font-family: "gg sans Medium Regular";
@@ -343,7 +334,6 @@ main a:hover {
     color: #313338;
 
 }
-
 
 .categoryDiv {
     background-color: #31333808;
@@ -435,8 +425,6 @@ main a:hover {
     color: #313338;
 }
 
-
-
 .card-components .verified {
     width: fit-content;
     padding: 5px 7px;
@@ -452,10 +440,6 @@ main a:hover {
 .card-components .verified span {
     margin-right: 5px;
 }
-
-
-
-#about {}
 
 .top {
     background-color: #5865f2;
